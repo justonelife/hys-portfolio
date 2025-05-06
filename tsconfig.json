@@ -5,6 +5,11 @@
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "strict": true,
+    "paths": {
+      "@projects/*": [
+        "./projects/*/src/public-api.ts"
+      ]
+    },
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
