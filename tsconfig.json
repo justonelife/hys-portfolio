@@ -8,6 +8,9 @@
     "paths": {
       "@projects/*": [
         "./projects/*/src/public-api.ts"
+      ],
+      "@features/*": [
+        "./src/app/features/*"
       ]
     },
     "noImplicitOverride": true,

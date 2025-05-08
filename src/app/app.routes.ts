@@ -3,7 +3,11 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    loadComponent: () => import('@projects/hys-layouts').then(c => c.HysSidebarComponent),
-    children: [],
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('@features/home-page').then(r => r.routes),
   }
 ];

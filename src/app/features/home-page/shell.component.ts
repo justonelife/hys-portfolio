@@ -3,10 +3,9 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 @Component({
   standalone: true,
   imports: [],
-  selector: 'hys-sidebar-layout',
-  templateUrl: './sidebar.component.html',
+  templateUrl: './shell.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HysSidebarComponent {
+export class ShellComponent {
 
 }

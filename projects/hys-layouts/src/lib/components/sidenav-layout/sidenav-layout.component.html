@@ -1,0 +1,12 @@
+<pre>isHandset: {{isHandset$ | async | json}}</pre>
+@if (isHandset$ | async) {
+
+<header>
+  header
+  <button type="button" (click)="sidenav.toggle()">open</button>
+</header>
+}
+<mat-sidenav-container>
+  <mat-sidenav #sidenav opened mode="side">sidebar</mat-sidenav>
+  <ng-content />
+</mat-sidenav-container>
